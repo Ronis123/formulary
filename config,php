@@ -1,1 +1,17 @@
+<?php
 
+$bdHost='Localhost';
+$dbUsername='root';
+$dbPassword='';
+$dbName='formulary';
+
+$conexao= new mysql($bdHost, $dbUsername, $dbPassword, $dbName)
+if($conexao->connect-errno)
+{
+    echo "Error";
+}else 
+{
+    echo "conexão efetuada com sucesso"
+}
+
+?>
